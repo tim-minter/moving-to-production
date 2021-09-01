@@ -54,15 +54,17 @@ Here are the categories we need to look at.
 # Quick Checklist (for IBM Cloud)
 1. Add [IBM Cloud Activity Tracker](https://cloud.ibm.com/catalog/services/ibm-cloud-activity-tracker?callback=%2Fobserve%2Factivitytracker%2Fcreate) service to your cloud account. 
 2. Add [IBM Cloud Monitoring](https://cloud.ibm.com/catalog/services/ibm-cloud-monitoring?callback=%2Fobserve%2Fmonitoring%2Fcreate) and set up monitoring of key metrics etc CPU and memory utilisation and performance of any messaging system eg Kafka (IBM Event Streams) or MQ etc.
-3. Add [IBM Log Analysis](https://cloud.ibm.com/catalog/services/ibm-log-analysis?callback=%2Fobserve%2Flogging%2Fcreate).
-4. Decide on required availability and ensure system architecture supports that.
-5. Eliminate any single points of failure if they will possibly cause availability to be lower than required.
-6. Ensure data is backed up and recovery of that backup is possible. Put in place a backup test process.
-8. Select the size of your server/serverless/container infrastructure.
-9. Test scalability by running a load generator for example [K6](https://k6.io) and monitor performance with IBM Cloud Monitoring.
-10. Change the size of your server/serverless/container infrastructure and add auto scaler functions.
-11. Create plan for disaster recovery (complete or partial system failure and deletion).
-12. Put in place a disaster recovery test process.
-13. Review security of Cloud account and put controls in place for access management going forwards (starters and leavers process, and periodic revalidation of min required access to do the job).
-14. Set up problem and change management processes.
-15. Ensure all roles and responsibilities are defined and assigned in the organisation. See [Minimum Viable Organisation](https://github.com/tim-minter/MVO)
+3. Add [IBM Log Analysis](https://cloud.ibm.com/catalog/services/ibm-log-analysis?callback=%2Fobserve%2Flogging%2Fcreate). Note: Cost is based on data retained. Start by turning eveything off and then add key metrics as you go if cost is a consideration.
+4. Ensure SSL certificates are in place and certificate management process is in place (automatic or manual)
+5. Perform penetration testing and code scanning and remediate.
+6. Decide on required availability and ensure system architecture supports that. Typical availabilities quoted can be 95%, 99%, 99.5% 99.9%, 9.99% and 99.999%. Each of these dictates different architectures.
+7. Eliminate any points of failure if they will possibly cause availability to be lower than required.
+8. Ensure data is backed up and recovery of that backup is possible. Put in place a backup test process.
+9. Select the size of your server/serverless/container infrastructure based on anticipated workload.
+10. Test scalability by running a load generator for example [K6](https://k6.io) and monitor performance with IBM Cloud Monitoring.
+11. Change the size of your server/serverless/container infrastructure and add auto scaler functions. Loop back to previous point.
+12. Create plan for disaster recovery (complete or partial system failure and deletion).
+13. Put in place a disaster recovery plan test process and schedule it.
+14. Review security of Cloud account and put controls in place for access management going forwards (starters and leavers process, and periodic revalidation of min required access to do the job).
+15. Set up problem and change management processes.
+16. Ensure all roles and responsibilities are defined and assigned in the organisation. See [Minimum Viable Organisation](https://github.com/tim-minter/MVO)

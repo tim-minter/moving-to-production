@@ -40,8 +40,10 @@ Here are the categories we need to look at.
 - How to handle service version changes and/or deprecation (particularly important in cloud solutions)
 
 ## Organisation
-- Roles and responsibilities clear and actually cover all requirements eg keeping data? Do you have a data controller? 
-- See !here(https://github.com/tim-minter/MVO) for a "minimum viable organisation" diagram
+- Roles and responsibilities clear and actually cover all requirements eg keeping data? Do you have a data controller? Who will coordinate a recovery, who will spot when a service used by the solution is being upgraded/changed?
+- See [here](https://github.com/tim-minter/MVO) for a "minimum viable organisation" diagram
+
+![MVO Diagram](https://github.com/tim-minter/MVO/blob/main/minimum%20viable%20organisation%20(generic).png)
 
 ## Cost
 - Do we really know what the costs look like for 

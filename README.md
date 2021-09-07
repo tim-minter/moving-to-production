@@ -38,7 +38,7 @@ Here are the categories we need to look at.
 
 ## Monitoring and Logging
 - Cloud based services will be creating log and metric data, however this data normally has to be captured by another cloud service for you to be able to see and use it.
-- Remember that as well as your actual system, you also have a cloud to manage and monitor in some way. You need to know "what just happened to my system?". Cloud will also be emitting data which will also need to be captured by something. With IBM Cloud, adding the 
+- Remember that as well as your actual system, you also have a cloud to manage and monitor in some way. You need to know "what just happened to my system?". Cloud will also be emitting data which will also need to be captured by something. With IBM Cloud, adding the IBM Cloud Activity Tracker will achieve this goal.
 
 ## Support
 - Who supports what, and is it to the right level to support your overall availability goal

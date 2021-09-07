@@ -53,6 +53,11 @@ Here are the categories we need to look at.
 
 ## Security
 - Penetration testing
+- Onboarding and off boarding of people and devices
+- Source code security
+- Secret handling
+- Certificate management
+- Vulnerability scanning
 
 ## Cost
 - Do we really know what the costs look like for 
